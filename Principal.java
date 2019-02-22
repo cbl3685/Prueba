@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 class Principal{
   public static void main(String[] args) {
+    parImpar();
+  }
+
+  public static void parImpar(){
     Scanner teclado = new Scanner(System.in);
     int numero = 0;
 

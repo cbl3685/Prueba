@@ -1,3 +1,4 @@
+import java.lang.Math;
 import java.time.LocalDate;
 import java.util.Scanner;
 
@@ -5,6 +6,7 @@ class Principal{
   public static void main(String[] args) {
     mostrarFecha();
     parImpar();
+    numeroRandom();
   }
 
   public static void mostrarFecha(){
@@ -23,5 +25,10 @@ class Principal{
     }else{
       System.out.println("El numero "+numero+" es impar");
     }
+  }
+
+  public static void numeroRandom(){
+    int random = (int)(Math.random() * 10 + 1);
+    System.out.println("Numero aleatorio: "+random);
   }
 }
